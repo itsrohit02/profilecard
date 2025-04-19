@@ -1,0 +1,96 @@
+CSS-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position: relative;
+    line-height: 1.2;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: orange;
+    background-image: linear-gradient(#ff9505 0%, #ffb627 50%, #ffc971 100%);
+    perspective: 1000px;
+    
+}
+.A{
+    display: block;
+    position: relative;
+    box-sizing: content-box;
+    height: 550px;
+    width: 400px;
+    border: 10px none;
+    border-radius: 10px;
+    margin: 80px auto;
+    background-color: rgba(255, 145, 0, 0.541);
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out, transform 0.5s ease;
+    transform-style: preserve-3d; 
+    box-shadow: 0 0 0 5px #000000;
+    /* transition: background-color 0.3s ease-in-out; */
+
+}
+.B{
+    display: block;
+    height: 100px;
+    padding: 20px;
+    position: relative;
+    margin: 30px;
+    
+
+}
+.D{
+    height: 50px;
+}
+
+.about{
+    font-style: italic;
+    text-align: center;
+}
+.photo{
+    height: 48px;
+    width: 40px;
+    margin-left: 110px;
+    border-radius: 30px;
+    box-shadow: 0 0 0 5px #ffffff;
+}
+.naam{
+    font-style: italic;
+    text-align: center;
+}
+.F{
+    height: 70px;
+    width: 75px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+.G{
+    height: 70px;
+    width: 75px;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+.H{
+    height: 70px;
+    width: 75px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    margin-top: -75px;
+    margin-left: 140px;
+}
+
+.A:hover {
+    transform: rotateY(360deg);
+
+}
+
+@media screen and (min-width: 400px){
+body {
+    background-color: lightgreen;
+  }
+  .size{
+      font-size: 60px;
+  }
+}
